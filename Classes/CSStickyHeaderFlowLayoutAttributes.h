@@ -13,4 +13,6 @@
 // 0 = minimized, 1 = fully expanded, > 1 = stretched
 @property (nonatomic) CGFloat progressiveness;
 
+@property (nonatomic) BOOL sticky;
+
 @end

@@ -187,7 +187,8 @@ NSString *const CSStickyHeaderParallaxHeader = @"CSStickyHeaderParallexHeader";
     CGFloat maxY = MIN(MAX(y, attributes.frame.origin.y), sectionMaxY);
 
 //    NSLog(@"%.2f, %.2f, %.2f", y, maxY, sectionMaxY);
-
+    
+    ((CSStickyHeaderFlowLayoutAttributes*)attributes).sticky = (y >= maxY);
     origin.y = maxY;
 
     attributes.frame = (CGRect){
